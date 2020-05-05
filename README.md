@@ -8,6 +8,7 @@ https://github.com/linux-on-ibm-z/docs/wiki/Building-C-MongoDB-Driver
 Using my library you can write code like this :
 
    src/insert.cpp
+```
 #include<mongocpp.h>
 #include<iostream>
 using namespace std;
@@ -35,5 +36,6 @@ mc.close();
 cout<<"done";
 return 0;
 }
+```
 
 
