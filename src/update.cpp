@@ -17,6 +17,5 @@ BsonObject * update =bob->getBsonObject();
 collection->update(selector,update);
 collection->close();
 mc.close();
-cout<<"done";
 return 0;
 }
