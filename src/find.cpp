@@ -14,7 +14,6 @@ printf("last name : %s   ",cursor->getString("lastName"));
 printf("first name : %s   \n",cursor->getString("firstName"));
 }
 cursor->close();
-printf("***************************************************************************************\n");
 
 BsonObjectBuilder *bob = new BsonObjectBuilder();
 bob->append("lastName","mishra");
@@ -29,7 +28,6 @@ printf("first name : %s   ",cursor->getString("firstName"));
 printf("last name : %s   \n",cursor->getString("lastName"));
 }
 cursor->close();
-printf("***************************************************************************************\n");
 bob= new BsonObjectBuilder();
 bob->append("firstName",true);
 bob->append("_id",false);
@@ -63,13 +61,11 @@ while(cursor->hasNext())
 printf("%s\n",cursor->next());
 }
 cursor->close();
-printf("***************************************************************************************\n");
 cursor = collection->find(NULL,opt);
 while(cursor->hasNext())
 {
 printf("%s\n",cursor->next());
 }
-printf("***************************************************************************************\n");
 projection->close();
 sort->close();
 opt->close();
@@ -77,7 +73,6 @@ selector->close();
 cursor->close();
 collection->close();
 mc.close();
-cout<<"done";
 return 0;
 }
 
