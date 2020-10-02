@@ -22,7 +22,6 @@ collection->insert(bsonObject);
 bsonObject->close();
 collection->close();
 mc.close();
-cout<<"done";
 return 0;
 }
 

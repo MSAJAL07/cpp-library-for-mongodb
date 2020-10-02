@@ -13,6 +13,5 @@ collection->remove(selector);
 selector->close();
 collection->close();
 mc.close();
-cout<<"done";
 return 0;
 }
